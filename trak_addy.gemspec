@@ -17,6 +17,11 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
+  gem.add_dependency 'faraday'
+  gem.add_dependency 'bonfig'
+  gem.add_dependency 'activemodel'
+  gem.add_dependency 'activesupport'
+  gem.add_dependency 'activeresource'
   gem.add_development_dependency 'bundler', '~> 1.0'
   gem.add_development_dependency 'rake', '~> 0.8'
   gem.add_development_dependency 'rspec', '~> 2.4'
